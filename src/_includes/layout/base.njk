@@ -17,6 +17,18 @@
     <title>{{ title }} - {{ site.name }}</title>
     <meta name="description" content="{{ description }}">
     <meta name="keywords" content="{{ keywords }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: 'O2Q7J2YKJV',
+        apiKey: '4cc708feb6641113b5d26e43002d1841',
+        siteId: '1c9c4fe8-a4db-4c82-9c29-91f60d1ba6d9',
+        branch: 'main',
+        selector: 'div#search',
+      });
+    </script>
+
     <link rel="icon" type="image/png" href="{{ site.faviconUrl | url  }}">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/main.css' | url }}"/>
     <link href="https://unpkg.com/prismjs@1.21.0/themes/prism-okaidia.css" rel="stylesheet">
